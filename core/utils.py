@@ -39,7 +39,6 @@ def obtain_xero_oauth2_token(request):
 
 def store_xero_oauth2_token(request, token):
     request.session["token"] = token
-    request.session.modified = True
 
 
 def xero_api_client(request):

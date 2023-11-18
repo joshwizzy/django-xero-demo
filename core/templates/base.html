@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% if title %}{{ title }}{% else %}Welcome to Xero Python oauth starter{% endif %}</title>
+</head>
+<body>
+<a href="{% url "index" %}">Index</a> |
+<a href="{% url "login" %}">Login</a> |
+<a href="{% url "logout" %}">Logout</a> |
+<a href="{% url "tenants" %}">Tenants</a> |
+<a href="{% url "export_token" %}">Export Token</a> | 
+<a href="{% url "create_contact_person" %}">Create Contact</a> |
+<a href="{% url "create_multiple_contacts" %}">Create Multiple Contacts</a> |
+<a href="{% url "get_invoices" %}">Invoices</a> |
+<a href="{% url "refresh_token" %}">Refresh Token</a> |
+{% block content %}{% endblock %}
+<!--<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>-->
+</body>
+</html>
